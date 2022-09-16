@@ -5,7 +5,7 @@
         background-image: linear-gradient(#373F51,#5e6870 );
     }
     section{
-        width: 80%;
+        width: 85%;
        
 
     }
@@ -19,9 +19,16 @@
     div#formulario{
         float: right;
         width: 70%;
-        
-
+        height: auto;
+        background-color: white;
+ 
     }
+    
+   
+  
+
+    
+   
 
     
 
@@ -29,15 +36,50 @@
 
 @media screen and (min-width: 992px) {
     section{
-        width: 950px;
+
+        float:left;
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        
+    }
+    #formulario{
+       
+       
+       
+        text-align: center;
+        margin-left: 20px;
+        font-size:1.2em;
+        margin-bottom: 25px;
+
+        
+        
+       
+      
+ 
     }
     div#imag{
         float: right;
         width: 50%;
-        height:100% ;
+        height: 100%;
+        
+
     }
-    div#formulario{
-        float:left ;
-        width: 50%;
+    .braw{
+       
+        float: left;
+        margin: auto;
     }
-}
+   
+
+      
+       
+   
+   
+       
+        
+        
+    
+    
+    
+    
