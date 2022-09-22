@@ -8,7 +8,7 @@
 
 }
 
-body {
+body, html{
     background-color:#373F51;
     height: 100vh;
     width: 100vw;
@@ -20,28 +20,33 @@ main{
     width: 100vw;
 
 }
-section{
+#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;/*tudo que estiver fora da borda vai fica escondido*/
+    overflow: hidden;
 
-    background-color: white;
-    width: 300px;
-    height: 550px;
+
+
+    background-color:white;
+    width: 250px;
+    height: 600px;
     border-radius: 20px;
-    box-shadow:0px 1px 10px rgba(0, 0, 0, 0.366);
-    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.388);
 
-    transition: width .5s , heigth .5s;
+    transform: translate(-50%, -50%);
+    transition: width .2s , height .2s ;
     transition-timing-function: ease;
+   
+
+
+
+
 
 }
-
-#imag{
+#imagem{
     display: block;
-  background:black url(../imagens/pexels-dinnow-9444476.jpg) no-repeat;
+    background:black url(../imagens/pexels-dinnow-9444476.jpg) no-repeat;
     height: 200px;
     background-size:cover;
     background-position: left top;
@@ -49,72 +54,101 @@ section{
 }
 #formulario{
     display: block;
-    padding: 20px;
+    padding: 10px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#formulario > p{
+    font-size: 15px;
+    margin-bottom: 35px;
+
+}
+
+.campo{
+    background-color: #F4D35E;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin:5px 0px ;
+    overflow: hidden;
    
 }
 
-#formulario h1{
-    text-align: center;
-    padding: 10px;
-}
-#formulario p{
-    text-align: center;
-    font-size:15px;
-}
-.campo{
-    background-color:#373F51 ;
-    width: 95%;
-    border-radius: 5PX;
-    margin: auto;
-    margin-bottom:5px;
-    color: aliceblue;
-    text-align: center;
-    height:40px
-     ;
-    
-}
 label{
     display: none;
 }
-
-input[type=submit]{
-    
-    height: 40px;
-    margin: auto;
+.xbotao{
     display: block;
-    font-size: 1em;
-    width:95% ;
-    background:rgb(255, 255, 255);
-    color: rgb(15, 71, 238);
-    border-radius: 5px;
+    background-color: #323641ad;
+    color: black;
     text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
+    }
 
+.xbotao:hover{
+    background-color: #373F51;
+    color: rgb(241, 235, 235);
 }
-input[type=submit]:hover{
-    background-color: #191c24;
-    color: white;
-
-}
-a {
-    
+.botao{
+   
     display: block;
     text-align: center;
     text-decoration: none;
+    text-align: center;
     font-size: 1em;
-    width:95% ;
-    background-color:white;
+    width: 100%;
     height: 40px;
-    margin: auto;
+    color:black;
+    background-color:white;
+    border: 1px solid black;
     border-radius: 5px;
-    color: rgb(15, 71, 238);
-    border: 1px solid  #191c24;
+    
+}
+.botao:hover{
+    background-color: #373F51;
+    color: rgb(241, 235, 235);
+}
+
+.botao > span{
+    
+    margin: 0px;
+    text-align: center;
+    font-size: 0.8em;
+    
+}
+
+.campo > span{
+    background-color: #F4D35E;
+    color:black ;
+    font-size:30px ;
+    width: 40px;
+    padding: 5px;
+
+}
+.campo > input{
+    
+   font-size: 1em;
+   width:calc(100% - 44.8px);
+   height: 100%;
+   border-radius: 5px;
+   padding: 5px;
+   transform: translateY(-8px);
     
 
 }
-a:hover{
-    background-color:  #191c24;
-    color: white;
 
+.campo > input:focus-within{
+    background-color:white;
 }

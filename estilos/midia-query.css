@@ -2,24 +2,54 @@
 
 @media screen and (min-width:768px) and (max-width:992px){
     
-    section{
-        width: 90%;
+    #login{
+        width: 80vw;
+        height: 500px;
        
 
     }
-    #imag{
-        float:right;
+    #imagem{
+        float:left;
         width: 40%;
         height: 100%;
 
     }
     #formulario{
-        float: left;
+        float:right;
         width: 60%;
     }
+}
    
     
-    
+    @media screen and (min-width:992px) {
+        #login{
+            width:80vw;
+            height: 400px;
+
+        }
+           
+        
+        
+        #imagem{
+            float:right;
+            width: 50%;
+            height: 100%;
+           
+        }
+        
+        #formulario{
+            float: left;
+            width: 50%;
+
+
+        }
+        #formulario > p{
+            font-size: 15px;
+        
+        }
+
+            
+    }
    
   
 
